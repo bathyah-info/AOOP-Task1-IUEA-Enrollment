@@ -13,4 +13,11 @@ public class Course {
         this.registeredStudents = registeredStudents;
         totalStudentsAllCourses += registeredStudents;
     }
+    // I added a method with local variables with temporary calculations only alive inside this method
+    public void calculatePerformanceStats(int attendedStudents, int passedStudents) {
+        double attendanceRate = ((double) attendedStudents / this.registeredStudents) * 100;
+        double passPercentage = ((double) passedStudents / this.registeredStudents) * 100;
+
+        System.out.printf("  [Stats] Attendance Rate: %.2f%% | Pass Rate: %.2f%%%n", attendanceRate, passPercentage);
+    }
 }
