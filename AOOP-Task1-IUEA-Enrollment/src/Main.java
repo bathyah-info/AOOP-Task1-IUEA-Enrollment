@@ -32,4 +32,3 @@ public class Main {
         course.calculatePerformanceStats(attended, passed);
         System.out.println();
     }
-}
