@@ -11,6 +11,10 @@ public class Main {
         displayCourseDetails(course1, 110, 105);
         displayCourseDetails(course2, 85, 78);
         displayCourseDetails(course3, 75, 70);
+
+        // I added this block to display university-wide statistics via static variable access
+        System.out.println("UNIVERSITY-WIDE SUMMARY:");
+        System.out.println("Total Students Enrolled Across All Courses: " + Course.getTotalStudentsAllCourses());
     }
 
     private static void displayCourseDetails(Course course, int attended, int passed) {
