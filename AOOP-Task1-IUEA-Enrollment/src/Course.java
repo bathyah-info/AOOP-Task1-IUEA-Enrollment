@@ -1,3 +1,10 @@
+
+/**
+ * This class represents an academic course at IUEA and tracks both per-course enrollment
+ * (instance variables), temporary performance calculations (local variables),
+ * and university-wide enrollment across all courses (static variable).
+ */
+
 public class Course {
 
     // I added instance variables here which is unique to each Course object
@@ -25,6 +32,7 @@ public class Course {
         return courseName;
     }
 
+    // I added this block of code to return the number of students registered in this specific course instance.
     public int getRegisteredStudents() {
         return registeredStudents;
     }

@@ -1,3 +1,9 @@
+/**
+ * This class is the main entry point for the IUEA Course Enrollment Tracking System.
+ * Instantiates multiple Course objects and displays individual and
+ * university-wide enrollment statistics.
+ */
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("IUEA COURSE ENROLMENT & TRACKING SYSTEM");
@@ -17,7 +23,7 @@ public class Main {
         System.out.println("Total Students Enrolled Across All Courses: " + Course.getTotalStudentsAllCourses());
         System.out.println("Continue_");
     }
-
+// This part prints details for a single course and triggers its performance calculation.
     private static void displayCourseDetails(Course course, int attended, int passed) {
         System.out.println("Course Name: " + course.getCourseName());
         System.out.println("Registered Students: " + course.getRegisteredStudents());
