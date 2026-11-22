@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("   IUEA COURSE ENROLMENT & TRACKING SYSTEM");
+        System.out.println("IUEA COURSE ENROLMENT & TRACKING SYSTEM");
 
         // I created three Course objects with their own names and student counts
         Course course1 = new Course("BSc Software Engineering", 120);
@@ -15,6 +15,7 @@ public class Main {
         // I added this block to display university-wide statistics via static variable access
         System.out.println("UNIVERSITY-WIDE SUMMARY:");
         System.out.println("Total Students Enrolled Across All Courses: " + Course.getTotalStudentsAllCourses());
+        System.out.println("Continue_");
     }
 
     private static void displayCourseDetails(Course course, int attended, int passed) {
