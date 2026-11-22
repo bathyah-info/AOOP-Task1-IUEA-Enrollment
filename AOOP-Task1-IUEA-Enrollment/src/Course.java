@@ -20,4 +20,17 @@ public class Course {
 
         System.out.printf("  [Stats] Attendance Rate: %.2f%% | Pass Rate: %.2f%%%n", attendanceRate, passPercentage);
     }
+    // I added instance getters which read values belonging to a specific Course object
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public int getRegisteredStudents() {
+        return registeredStudents;
+    }
+
+    // I added a static getter that reads the shared total across all Course objects
+    public static int getTotalStudentsAllCourses() {
+        return totalStudentsAllCourses;
+    }
 }
